@@ -11,7 +11,6 @@ np.random.shuffle(list_student)
 dict_student = {student: dict_student[student] for student in list_student}
 dict_student = dict(sorted(dict_student.items(), key= lambda x:x[1]))
 
-
 for i in range(15):
     if i <= 2:
         team[0].append(list_student[i])
@@ -22,7 +21,6 @@ for i in range(15):
         team[2].append(list_student[i])
     else:
         team[3].append(list_student[i])
-
 
 for num, item in enumerate(team, start=1):
     print(f'{num}조 : ', end='')
